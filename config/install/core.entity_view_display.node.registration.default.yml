@@ -1,0 +1,53 @@
+# core.entity_view_display.node.registration.default.yml
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.registration.field_one_plus
+    - field.field.node.registration.field_email
+    - field.field.node.registration.field_one_plus
+    - field.field.node.registration.field_vegetarians
+    - field.field.node.registration.field_department
+    - node.type.registration
+  module:
+    - text
+    - user
+id: node.registration.default
+targetEntityType: node
+bundle: registration
+mode: default
+content:
+#  body:
+#    label: hidden
+#    type: text_default
+#    weight: 101
+#    settings: {  }
+#    third_party_settings: {  }
+#  links:
+#    weight: 100
+  field_one_plus:
+    label: hidden
+    type: list_default
+    weight: 98
+    settings: { }
+    third_party_settings: { }
+  field_children:
+    label: hidden
+    type: number_integer
+    weight: 96
+    settings: { }
+    third_party_settings: { }
+  field_vegetarians:
+    label: hidden
+    type: number_integer
+    weight: 100
+    settings: { }
+    third_party_settings: { }
+  field_email:
+    type: basic_string
+    label: hidden
+    settings: { }
+    third_party_settings: { }
+    weight: 111
+    region: content
+hidden: {  }

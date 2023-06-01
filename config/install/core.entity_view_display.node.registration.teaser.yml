@@ -1,0 +1,18 @@
+# core.entity_view_display.node.registration.teaser.yml
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.registration.field_one_plus
+    - node.type.registration
+  module:
+    - text
+    - user
+id: node.registration.teaser
+targetEntityType: node
+bundle: registration
+mode: teaser
+content:
+
+hidden: {  }

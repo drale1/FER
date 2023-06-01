@@ -1,0 +1,7 @@
+fer_departments.fer_dep_settings:
+  path: '/admin/config/system/fer-departments'
+  defaults:
+    _title: 'Family Event Registration Departments Inputting'
+    _form: 'Drupal\fer_departments\Form\FerDepSettingsForm'
+  requirements:
+    _permission: 'administer site configuration'

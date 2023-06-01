@@ -1,0 +1,6 @@
+services:
+  fer.route_subscriber:
+    class: Drupal\fer\EventSubscriber\FerRouteSubscriber
+    arguments: ['@config.factory']
+    tags:
+      - { name: event_subscriber }

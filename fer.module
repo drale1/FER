@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * Implements hook_preprocess().
+ */
+function fer_preprocess(&$variables, $hook)
+{
+  $route_name = \Drupal::routeMatch()->getRouteName();
+//  kint($route_name);die();
+
+  $route = \Drupal::routeMatch()->getCurrentRouteMatch()->getRouteObject()->getDefault('_title');
+//  kint($route);die();
+
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+//deleting installed fields after uninstalling module
+function fer_uninstall($is_syncing)
+{
+  \Drupal\field\Entity\FieldStorageConfig::loadByName('node', 'field_one_plus')->delete();
+  \Drupal\field\Entity\FieldStorageConfig::loadByName('node', 'field_children')->delete();
+  \Drupal\field\Entity\FieldStorageConfig::loadByName('node', 'field_vegetarians')->delete();
+  \Drupal\field\Entity\FieldStorageConfig::loadByName('node', 'field_email')->delete();
+  \Drupal\field\Entity\FieldStorageConfig::loadByName('node', 'field_department')->delete();
+
+}
+

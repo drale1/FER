@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - fer
+  theme:
+    - olivero
+id: regcount
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: fer_regcount
+settings:
+  id: fer_regcount
+  label: RegCount
+  label_display: visible
+  provider: fer
+visibility: {  }

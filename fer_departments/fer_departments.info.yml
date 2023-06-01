@@ -1,0 +1,5 @@
+name: Fer Departments
+type: module
+description: Config form for inputting Departments of Family Event Registration
+package: drax
+core_version_requirement: ^9 || ^10

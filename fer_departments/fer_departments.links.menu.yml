@@ -1,0 +1,13 @@
+family_event_registration.settings:
+  title: Family Event Registration
+  description: Family Event Registration
+  parent: system.admin_config
+  url: 'internal:#nolink'
+  weight: 10
+
+fer_departments.fer_dep_settings:
+  title: FER Departments Inputting
+  description: Family Event Registration Departments Inputting
+  parent: family_event_registration.settings
+  route_name: fer_departments.fer_dep_settings
+  weight: 10
